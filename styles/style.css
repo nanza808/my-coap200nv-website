@@ -152,6 +152,24 @@ img {
   object-fit: cover;
 }
 
+.intro-block {
+  margin-top: 1.5rem;
+  padding: 1.2rem 1rem;
+  border: 2px solid #00539F;
+  background-color: #e6f2ff;
+  text-align: center;
+}
+
+.intro-block h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-block p {
+  margin: 0.8rem auto 0;
+  max-width: 900px;
+}
+
 .hero-arrow {
   position: absolute;
   top: 50%;
