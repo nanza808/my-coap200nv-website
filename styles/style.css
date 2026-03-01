@@ -1,0 +1,334 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #00539F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-color: #BFDFFF;
+}
+
+.site-header,
+.site-footer {
+  width: 100%;
+}
+
+.site-header {
+  background-color: #00539F;
+}
+
+.site-footer {
+  background-color: #BFDFFF;
+}
+
+.page-main {
+  width: min(100% - 1rem, 1180px);
+  margin: 0 auto;
+  padding: 0 0 4rem;
+}
+
+.site-header {
+  padding: 1rem 2rem 0.75rem;
+  border-bottom: 5px solid #00539F;
+}
+
+.top-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+}
+
+.header-vinyl {
+  position: absolute;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.brand {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: clamp(3.4rem, 5vw, 5.2rem);
+  font-weight: 700;
+}
+
+.nav-list,
+.menu {
+  list-style: none;
+  margin: 1rem auto 0;
+  padding: 0;
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.nav-list a,
+.menu li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.nav-list a:hover,
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 34px;
+  text-align: center;
+  margin: 6px 0 10px;
+  padding: 20px 0;
+  color: #00539F;
+}
+
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin: 6px 0 10px;
+  padding: 20px 0;
+  color: #00539F;
+}
+
+h3 {
+  font-size: 19px;
+  margin: 14px 0 6px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+li {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+ul {
+  list-style-position: inside;
+  margin-top: 4px;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.hero {
+  margin-top: 1.5rem;
+  height: clamp(230px, 36vw, 510px);
+  background-color: #9ec7ee;
+  border: 3px solid #00539F;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.4rem;
+  color: black;
+  text-decoration: none;
+}
+
+.hero-arrow.left {
+  left: 0.6rem;
+}
+
+.hero-arrow.right {
+  right: 0.6rem;
+}
+
+.home-section {
+  margin-top: 2.8rem;
+  text-align: center;
+}
+
+.cta {
+  display: block;
+  margin: 1.2rem auto 1.8rem;
+  width: 170px;
+  border: 1px solid #00539F;
+  padding: 0.7rem 0;
+  font-size: 1.4rem;
+  background: transparent;
+}
+
+.cta-link {
+  color: black;
+  text-decoration: none;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+a.genre-link,
+a.genre-link:visited {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 2px solid #00539F;
+  background-color: #9ec7ee;
+  padding: 1.1rem 0.6rem;
+  text-align: center;
+}
+
+a.genre-link:hover,
+a.genre-link:focus {
+  text-decoration: underline;
+}
+
+.product-card,
+.review-card {
+  text-align: left;
+}
+
+.thumb {
+  background-color: #9ec7ee;
+  border: 2px solid #00539F;
+  height: 260px;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-title {
+  margin: 0.75rem 0 0.2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.price {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.review-shell {
+  background-color: transparent;
+  padding: 0;
+  border: 3px solid #00539F;
+}
+
+.review-image {
+  height: 260px;
+  background-color: #d8ebff;
+  overflow: hidden;
+}
+
+.review-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-line {
+  display: none;
+}
+
+.panel-page {
+  background-color: #e6f2ff;
+  border: 3px solid #00539F;
+  padding: 1.25rem;
+  margin-top: 1.6rem;
+}
+
+figcaption {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  color: black;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.top-reviews {
+  background-color: #e6f2ff;
+  padding: 15px;
+  border: 3px solid #00539F;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  padding: 1.3rem 0;
+  text-align: center;
+  border-top: 5px solid #00539F;
+}
+
+.socials {
+  margin-top: 0.6rem;
+  font-size: 1.8rem;
+  letter-spacing: 1rem;
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    padding-inline: 1rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .genre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thumb,
+  .review-image {
+    height: 220px;
+  }
+
+  .nav-list,
+  .menu {
+    gap: 12px;
+  }
+}
