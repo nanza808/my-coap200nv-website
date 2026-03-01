@@ -195,6 +195,30 @@ img {
   gap: 1rem;
 }
 
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+a.genre-link,
+a.genre-link:visited {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 2px solid #00539F;
+  background-color: #9ec7ee;
+  padding: 1.1rem 0.6rem;
+  text-align: center;
+}
+
+a.genre-link:hover,
+a.genre-link:focus {
+  text-decoration: underline;
+}
+
 .product-card,
 .review-card {
   text-align: left;
@@ -291,6 +315,10 @@ figcaption {
   }
 
   .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .genre-grid {
     grid-template-columns: 1fr;
   }
 
