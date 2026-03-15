@@ -217,6 +217,21 @@ img {
   text-align: center;
 }
 
+.video-wrap {
+  max-width: 800px;
+  margin: 0.8rem auto 0;
+  border: 2px solid #00539F;
+  background: #9ec7ee;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .cta {
   display: block;
   margin: 1.2rem auto 1.8rem;
@@ -393,8 +408,9 @@ a.genre-link:focus {
 }
 
 .buy-btn {
-  display: inline-block;
-  margin-top: 0.8rem;
+  display: block;
+  margin: 0.8rem auto 0;
+  width: max-content;
   padding: 0.8rem 1.1rem;
   border: 2px solid #00539F;
   background: #9ec7ee;
