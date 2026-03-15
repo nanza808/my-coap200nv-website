@@ -63,6 +63,21 @@ body {
   min-height: 42px;
 }
 
+.cart-link {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}
+
+.cart-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 0;
+}
+
 .header-vinyl {
   position: absolute;
   left: 0;
@@ -335,6 +350,11 @@ a.genre-link:focus {
   font-size: 1.6rem;
 }
 
+.price-link:hover,
+.price-link:focus {
+  text-decoration: underline;
+}
+
 .artist-line {
   margin: 0;
   font-size: 1.5rem;
@@ -450,6 +470,25 @@ figcaption {
   margin-top: 0.6rem;
   font-size: 1.8rem;
   letter-spacing: 1rem;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+.info-table caption {
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.info-table th,
+.info-table td {
+  border: 2px solid #00539F;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
 }
 
 @media (max-width: 900px) {
